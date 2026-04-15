@@ -15,6 +15,7 @@ body {
   color:#1e293b;
 }
 
+/* HEADER */
 header {
   display:flex;
   justify-content:space-between;
@@ -31,27 +32,20 @@ header {
 }
 
 .logo img {
-  height:70px;
+  height:80px;
 }
 
 .logo-text {
-  font-size:24px;
+  font-size:26px;
   font-weight:700;
-  color:#0f172a;
 }
 
-nav a {
-  margin-left:25px;
-  text-decoration:none;
-  color:#334155;
-  font-weight:500;
-}
-
+/* HERO */
 .hero {
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:80px 60px;
+  padding:90px 60px;
   background:linear-gradient(135deg,#0ea5e9,#22c55e);
   color:white;
 }
@@ -61,30 +55,28 @@ nav a {
 }
 
 .hero h1 {
-  font-size:42px;
+  font-size:44px;
   margin-bottom:20px;
-  line-height:1.2;
 }
 
 .hero p {
   font-size:18px;
   margin-bottom:25px;
-  opacity:0.9;
 }
 
 .cta {
   background:linear-gradient(90deg,#22c55e,#f59e0b);
-  padding:14px 28px;
+  padding:16px 30px;
   border:none;
-  border-radius:8px;
+  border-radius:10px;
   color:white;
-  font-weight:600;
+  font-weight:700;
   cursor:pointer;
   transition:0.3s;
 }
 
 .cta:hover {
-  transform:scale(1.05);
+  transform:scale(1.07);
 }
 
 .hero img {
@@ -93,6 +85,7 @@ nav a {
   box-shadow:0 10px 30px rgba(0,0,0,0.2);
 }
 
+/* FEATURES */
 .section {
   padding:70px 40px;
   text-align:center;
@@ -114,10 +107,11 @@ nav a {
   box-shadow:0 5px 15px rgba(0,0,0,0.05);
 }
 
+/* PRICING */
 .pricing {
   display:flex;
   justify-content:center;
-  gap:20px;
+  gap:25px;
   margin-top:40px;
   flex-wrap:wrap;
 }
@@ -126,7 +120,7 @@ nav a {
   background:white;
   padding:30px;
   border-radius:12px;
-  width:260px;
+  width:280px;
   box-shadow:0 10px 25px rgba(0,0,0,0.08);
   transition:0.3s;
 }
@@ -136,15 +130,28 @@ nav a {
 }
 
 .card.featured {
-  border:2px solid #f59e0b;
+  border:3px solid #f59e0b;
   transform:scale(1.05);
 }
 
 .price {
-  font-size:32px;
-  margin:10px 0;
+  font-size:34px;
+  margin:15px 0;
+  font-weight:700;
 }
 
+.buy-btn {
+  margin-top:15px;
+  display:block;
+  background:linear-gradient(90deg,#22c55e,#f59e0b);
+  padding:12px;
+  border-radius:8px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+}
+
+/* SOCIAL PROOF */
 .testimonials {
   background:#eef2ff;
 }
@@ -155,6 +162,7 @@ nav a {
   font-style:italic;
 }
 
+/* URGENCY */
 .urgency {
   background:#fef3c7;
   padding:20px;
@@ -163,10 +171,11 @@ nav a {
   font-weight:600;
 }
 
+/* FOOTER */
 .footer {
   background:linear-gradient(135deg,#0ea5e9,#22c55e);
   color:white;
-  padding:40px;
+  padding:50px;
   text-align:center;
 }
 </style>
@@ -179,79 +188,101 @@ nav a {
     <img src="ChatGPT Image Apr 15, 2026, 10_38_29 AM.png">
     <div class="logo-text">Justoria</div>
   </div>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
   <div class="hero-text">
-    <h1>Stop Ending Your Workday Mentally Exhausted</h1>
-    <p>Transform chaos into structure, eliminate distractions, and take back control of your workday in just 30 minutes.</p>
-    <button class="cta">Get Started — Take Back Control</button>
-    <p style="margin-top:10px;">⭐ 5,000+ professionals | 4.9 rating</p>
+    <h1>Turn Chaos Into Control in 30 Minutes</h1>
+    <p>Eliminate overwhelm, sharpen focus, and take back control of your workday — without burning out.</p>
+    
+    <a href="https://buy.stripe.com/6oUfZaeGnec014ras3cc04" class="cta">
+      Start My Reset Now
+    </a>
+
+    <p style="margin-top:12px;">⭐ 5,000+ professionals | 4.9 rating</p>
   </div>
 
-  <!-- ✅ UPDATED IMAGE -->
   <img src="ChatGPT Image Apr 15, 2026, 12_32_04 PM.png">
 </section>
 
+<!-- FEATURES -->
 <section class="section">
   <h2>Transform Stress into Structure</h2>
   <div class="features">
     <div class="feature">✔ Eliminate distractions</div>
     <div class="feature">✔ Improve focus</div>
     <div class="feature">✔ Reduce stress</div>
-    <div class="feature">✔ Take control</div>
+    <div class="feature">✔ Take back control</div>
   </div>
 </section>
 
+<!-- TESTIMONIALS -->
 <section class="section testimonials">
   <h2>What Professionals Are Saying</h2>
   <div class="testimonial-box">
-    “This system completely changed how I work. I’m no longer overwhelmed every day.”
+    “I stopped feeling overwhelmed within 2 days.”
   </div>
   <div class="testimonial-box">
-    “I actually finish my work early now. This is insane.”
+    “This gave me structure I’ve never had before.”
   </div>
 </section>
 
+<!-- PRICING -->
 <section class="section">
-  <h2>Choose Your Plan</h2>
+  <h2>Choose Your System</h2>
 
   <div class="pricing">
+
+    <!-- STARTER -->
     <div class="card">
-      <h3>Starter</h3>
+      <h3>⚡ 30-Minute Reset System</h3>
       <div class="price">$9</div>
-      <p>Workday Reset System</p>
+      <p>Instant clarity. Eliminate overwhelm fast.</p>
+
+      <a href="https://buy.stripe.com/6oUfZaeGnec014ras3cc04" class="buy-btn">
+        Get Instant Reset
+      </a>
     </div>
 
+    <!-- PRO -->
     <div class="card featured">
-      <h3>Pro</h3>
+      <h3>🔥 Focus & Flow System</h3>
       <div class="price">$19</div>
-      <p>Focus + AI Tools</p>
+      <p>Deep focus. Eliminate distractions. Build momentum.</p>
+
+      <a href="https://buy.stripe.com/14A4gsbubaZO28vos3cc05" class="buy-btn">
+        Unlock Focus
+      </a>
     </div>
 
+    <!-- BUNDLE -->
     <div class="card">
-      <h3>Bundle</h3>
+      <h3>🚀 Complete Workday System</h3>
       <div class="price">$39</div>
-      <p>Complete System</p>
+      <p>Full control. Lifetime access. Everything included.</p>
+
+      <a href="https://buy.stripe.com/dRm4gsdcj4Bq4g0Si3cc06" class="buy-btn">
+        Get Everything
+      </a>
     </div>
+
   </div>
 
-  <button class="cta" style="margin-top:30px;">Get the Complete Bundle</button>
-
   <div class="urgency">
-    ⚠ Limited Launch Pricing — Offer Ends Soon
+    ⚠ Launch Pricing Ending Soon — Lock In Lifetime Access Today
   </div>
 </section>
 
+<!-- FOOTER -->
 <section class="footer">
   <h2>Take Back Control Today</h2>
-  <p>Start your system and transform your workday.</p>
-  <button class="cta">Get Started</button>
+  <p>Your system is ready. Your focus is waiting.</p>
+
+  <a href="https://buy.stripe.com/dRm4gsdcj4Bq4g0Si3cc06" class="cta">
+    Start Now
+  </a>
+
   <p style="margin-top:20px;">© 2026 Justoria. All rights reserved.</p>
 </section>
 
