@@ -1,163 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>NIDAI - Workday Performance System</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIDAI - Workday Performance System</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
+<style>
+body {
+  margin:0;
+  font-family:'Inter', sans-serif;
+  background:#f4f8fc;
+  color:#1f2937;
+}
 
-    body {
-      background: #f4f8fc;
-      color: #1f2937;
-      line-height: 1.6;
-    }
+/* HEADER */
+header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
+  background:white;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px 40px;
-      background: white;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
+header img {
+  height:40px;
+}
 
-    header h1 {
-      color: #0f4c81;
-    }
+.nav-btn {
+  background:linear-gradient(90deg,#2bb673,#f6c344);
+  padding:10px 18px;
+  border-radius:8px;
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+}
 
-    .btn {
-      background: linear-gradient(90deg, #2bb673, #f6c344);
-      color: white;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-    }
+/* HERO */
+.hero {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:80px 40px;
+  background:linear-gradient(to right,#e8f1fb,#ffffff);
+}
 
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 80px 40px;
-      background: linear-gradient(to right, #e8f1fb, #ffffff);
-    }
+.hero-text {
+  max-width:550px;
+}
 
-    .hero-text {
-      max-width: 600px;
-    }
+.hero h1 {
+  font-size:42px;
+  margin-bottom:20px;
+}
 
-    .hero h2 {
-      font-size: 42px;
-      margin-bottom: 20px;
-    }
+.hero p {
+  font-size:18px;
+  margin-bottom:20px;
+}
 
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
+.hero img {
+  width:420px;
+  border-radius:12px;
+  box-shadow:0 10px 40px rgba(0,0,0,0.1);
+}
 
-    .section {
-      padding: 60px 40px;
-      text-align: center;
-    }
+/* BUTTON */
+.btn {
+  background:linear-gradient(90deg,#2bb673,#f6c344);
+  padding:14px 22px;
+  border-radius:10px;
+  color:white;
+  text-decoration:none;
+  font-weight:700;
+  display:inline-block;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
 
-    .section h3 {
-      font-size: 30px;
-      margin-bottom: 20px;
-    }
+/* SECTIONS */
+.section {
+  padding:80px 40px;
+  text-align:center;
+}
 
-    .features {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
+.section h2 {
+  font-size:30px;
+  margin-bottom:20px;
+}
 
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      width: 250px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-    }
+/* FEATURES */
+.features {
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
 
-    .pricing {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 30px;
-      flex-wrap: wrap;
-    }
+.card {
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  width:240px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
 
-    .price-card {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      width: 220px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-    }
+/* PRICING */
+.pricing {
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
 
-    .highlight {
-      border: 2px solid #f6c344;
-    }
+.price {
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  width:220px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
 
-    .cta {
-      background: linear-gradient(to right, #0f4c81, #2bb673);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
+.highlight {
+  border:2px solid #f6c344;
+  transform:scale(1.05);
+}
 
-    footer {
-      padding: 30px;
-      text-align: center;
-      background: #0f4c81;
-      color: white;
-    }
+/* CTA */
+.cta {
+  background:linear-gradient(to right,#0f4c81,#2bb673);
+  color:white;
+  padding:70px 20px;
+  text-align:center;
+}
 
-    @media(max-width: 768px){
-      .hero {
-        flex-direction: column;
-        text-align: center;
-      }
-    }
-  </style>
+/* FOOTER */
+footer {
+  background:#0f4c81;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero {
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero img {
+    margin-top:20px;
+    width:100%;
+  }
+}
+</style>
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
-  <h1>NIDAI</h1>
-  <a href="#" class="btn">Buy Now</a>
+  <img src="logo.png">
+  <a href="#" class="nav-btn">Get the System</a>
 </header>
 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-text">
-    <h2>Take Back Control of Your Workday in 30 Minutes a Day</h2>
+    <h1>Take Back Control of Your Workday in 30 Minutes a Day</h1>
     <p>A simple system to eliminate overwhelm, improve focus, and increase performance.</p>
     <a href="#" class="btn">Get Started — Take Back Control</a>
-    <p style="margin-top:10px;">⭐ 5,000+ professionals | ⭐ 4.9/5 rating</p>
+    <p>⭐ 5,000+ professionals | ⭐ 4.9/5 rating</p>
   </div>
 
-  <img src="YOUR_IMAGE_HERE.png" width="400">
+  <img src="bundle.png">
 </section>
 
-<!-- PRODUCT -->
+<!-- BENEFITS -->
 <section class="section">
-  <h3>Transform Stress into Structure</h3>
-  <p>The Proven Workday Performance System</p>
+  <h2>Transform Stress into Structure</h2>
 
   <div class="features">
     <div class="card">✔ Eliminate distractions</div>
@@ -169,23 +194,23 @@
 
 <!-- PRICING -->
 <section class="section">
-  <h3>Choose Your Plan</h3>
+  <h2>Choose Your Plan</h2>
 
   <div class="pricing">
-    <div class="price-card">
-      <h4>Starter</h4>
+    <div class="price">
+      <h3>Starter</h3>
       <h2>$9</h2>
       <p>Workday Reset System</p>
     </div>
 
-    <div class="price-card highlight">
-      <h4>Pro</h4>
+    <div class="price highlight">
+      <h3>Pro</h3>
       <h2>$19</h2>
       <p>Focus + AI Tools</p>
     </div>
 
-    <div class="price-card">
-      <h4>Bundle</h4>
+    <div class="price">
+      <h3>Bundle</h3>
       <h2>$39</h2>
       <p>Complete System</p>
     </div>
@@ -197,29 +222,18 @@
 
 <!-- SYSTEM -->
 <section class="section">
-  <h3>The All-in-One System</h3>
+  <h2>The All-in-One System</h2>
 
   <div class="features">
-    <div class="card">
-      <h4>Reset</h4>
-      <p>Reduce overload instantly</p>
-    </div>
-
-    <div class="card">
-      <h4>Focus</h4>
-      <p>Work deeply for 25 minutes</p>
-    </div>
-
-    <div class="card">
-      <h4>Control</h4>
-      <p>Prioritize what matters</p>
-    </div>
+    <div class="card"><b>Reset</b><br>Reduce overload instantly</div>
+    <div class="card"><b>Focus</b><br>Work deeply for 25 minutes</div>
+    <div class="card"><b>Control</b><br>Prioritize what matters</div>
   </div>
 </section>
 
 <!-- CHALLENGE -->
 <section class="section">
-  <h3>Complete the 7-Day Challenge</h3>
+  <h2>Complete the 7-Day Challenge</h2>
   <p>Build lasting habits and take control of your workday.</p>
 
   <div class="features">
@@ -240,9 +254,8 @@
   <a href="#" class="btn">Get Started</a>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <p>© 2026 NIDAI. All rights reserved.</p>
+  © 2026 NIDAI. All rights reserved.
 </footer>
 
 </body>
