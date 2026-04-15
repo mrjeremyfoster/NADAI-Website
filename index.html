@@ -29,13 +29,15 @@ header img {
   height:40px;
 }
 
-.nav-btn {
+/* BUTTON */
+.nav-btn, .btn {
   background:linear-gradient(90deg,#2bb673,#f6c344);
-  padding:10px 18px;
-  border-radius:8px;
+  padding:12px 20px;
+  border-radius:10px;
   color:white;
   text-decoration:none;
   font-weight:600;
+  display:inline-block;
 }
 
 /* HERO */
@@ -53,12 +55,6 @@ header img {
 
 .hero h1 {
   font-size:42px;
-  margin-bottom:20px;
-}
-
-.hero p {
-  font-size:18px;
-  margin-bottom:20px;
 }
 
 .hero img {
@@ -67,16 +63,13 @@ header img {
   box-shadow:0 10px 40px rgba(0,0,0,0.1);
 }
 
-/* BUTTON */
-.btn {
-  background:linear-gradient(90deg,#2bb673,#f6c344);
-  padding:14px 22px;
-  border-radius:10px;
-  color:white;
-  text-decoration:none;
-  font-weight:700;
-  display:inline-block;
-  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+/* WORK IMAGE */
+.work-img {
+  width:100%;
+  max-width:900px;
+  margin:40px auto;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
 /* SECTIONS */
@@ -85,25 +78,18 @@ header img {
   text-align:center;
 }
 
-.section h2 {
-  font-size:30px;
-  margin-bottom:20px;
-}
-
-/* FEATURES */
 .features {
   display:flex;
   justify-content:center;
   gap:20px;
   flex-wrap:wrap;
-  margin-top:30px;
 }
 
 .card {
   background:white;
   padding:20px;
   border-radius:12px;
-  width:240px;
+  width:220px;
   box-shadow:0 5px 20px rgba(0,0,0,0.05);
 }
 
@@ -113,7 +99,6 @@ header img {
   justify-content:center;
   gap:20px;
   flex-wrap:wrap;
-  margin-top:30px;
 }
 
 .price {
@@ -153,8 +138,8 @@ footer {
   }
 
   .hero img {
-    margin-top:20px;
     width:100%;
+    margin-top:20px;
   }
 }
 </style>
@@ -164,7 +149,7 @@ footer {
 
 <!-- HEADER -->
 <header>
-  <img src="logo.png">
+  <img src="https://raw.githubusercontent.com/mrjeremyfoster/NADAI-Website/main/ChatGPT%20Image%20Apr%2015,%202026,%2010_38_29%20AM.png">
   <a href="#" class="nav-btn">Get the System</a>
 </header>
 
@@ -177,7 +162,13 @@ footer {
     <p>⭐ 5,000+ professionals | ⭐ 4.9/5 rating</p>
   </div>
 
-  <img src="bundle.png">
+  <img src="https://raw.githubusercontent.com/mrjeremyfoster/NADAI-Website/main/ChatGPT%20Image%20Apr%2015,%202026,%2010_32_51%20AM.png">
+</section>
+
+<!-- WORKPLACE IMAGE -->
+<section class="section">
+  <h2>Designed for Real Work Environments</h2>
+  <img class="work-img" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
 </section>
 
 <!-- BENEFITS -->
@@ -229,22 +220,6 @@ footer {
     <div class="card"><b>Focus</b><br>Work deeply for 25 minutes</div>
     <div class="card"><b>Control</b><br>Prioritize what matters</div>
   </div>
-</section>
-
-<!-- CHALLENGE -->
-<section class="section">
-  <h2>Complete the 7-Day Challenge</h2>
-  <p>Build lasting habits and take control of your workday.</p>
-
-  <div class="features">
-    <div class="card">✔ Sharpen focus</div>
-    <div class="card">✔ Build habits</div>
-    <div class="card">✔ Recover from burnout</div>
-    <div class="card">✔ Boost productivity</div>
-  </div>
-
-  <br>
-  <a href="#" class="btn">Start Your System Today</a>
 </section>
 
 <!-- CTA -->
